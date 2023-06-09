@@ -75,6 +75,7 @@ function Form() {
         <div className="input-row">
           <label htmlFor="name">Name : </label>
           <input
+            data-cy="input-name"
             id="name"
             name="name"
             type="text"
@@ -89,6 +90,7 @@ function Form() {
         <div className="input-row">
           <label htmlFor="lastname">Last Name : </label>
           <input
+            data-cy="input-lastname"
             id="lastname"
             name="lastname"
             type="text"
@@ -102,6 +104,7 @@ function Form() {
         <div className="input-row">
           <label htmlFor="email">E-Mail : </label>
           <input
+            data-cy="email-input"
             id="email"
             name="email"
             type="text"
@@ -115,6 +118,7 @@ function Form() {
         <div className="input-row">
           <label htmlFor="password">Password : </label>
           <input
+            data-cy="input-pass"
             id="password"
             name="password"
             type="password"
@@ -128,6 +132,7 @@ function Form() {
         <div className="input-row">
           <label htmlFor="terms">Approve: </label>
           <input
+            data-cy="input-terms"
             id="terms"
             name="terms"
             type="checkbox"
@@ -139,7 +144,12 @@ function Form() {
           )}
         </div>
         <div className="input-row">
-          <button type="submit" disabled={!valid} value="submit">
+          <button
+            type="submit"
+            data-cy="input-submit"
+            disabled={!valid}
+            value="submit"
+          >
             Gönder
           </button>
         </div>
